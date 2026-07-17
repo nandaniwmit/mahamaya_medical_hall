@@ -1,0 +1,6 @@
+{
+  "name": "Mahamaya Medical Hall",
+  "description": "Gaya's most trusted medical store on Tekari Road for genuine medicines, surgical items, baby care, and home care devices, offering seamless digital WhatsApp ordering.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
