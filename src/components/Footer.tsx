@@ -160,7 +160,15 @@ export default function Footer({ activeTab, setActiveTab, onOpenWhatsAppModal }:
           {/* Copyright notice */}
           <div>
             <p className="text-slate-500">
-              © {currentYear} Mahamaya Medical Hall. All rights reserved.
+              © {currentYear} Mahamaya Medical Hall. All rights reserved. Developed by{' '}
+              <a 
+                href="https://main.webmakerit.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-teal-500 hover:text-teal-400 font-semibold underline transition-colors"
+              >
+                WMIT
+              </a>.
             </p>
           </div>
 

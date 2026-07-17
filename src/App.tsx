@@ -11,9 +11,14 @@ import ContactView from './components/ContactView';
 import Footer from './components/Footer';
 import WhatsAppModal from './components/WhatsAppModal';
 import { Phone, MessageSquare, PlusSquare, Clock, MapPin, CheckCircle } from 'lucide-react';
+import { useTracker } from './hooks/useTracker';
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<ActiveTab>('home');
+  
+  // Activate global tracking hook with activeTab as the dynamic page identifier
+  useTracker(activeTab);
+
   const [darkMode, setDarkMode] = useState<boolean>(false);
   const [whatsappModalOpen, setWhatsappModalOpen] = useState<boolean>(false);
   const [selectedMedicineForOrder, setSelectedMedicineForOrder] = useState<string>('');
